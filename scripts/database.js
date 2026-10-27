@@ -106,3 +106,7 @@ const database = {
 export const getChildren = () => {
     return structuredClone(database.children)
 }
+
+export const getCelebrities = () => {
+    return structuredClone(database.celebrities)
+}
