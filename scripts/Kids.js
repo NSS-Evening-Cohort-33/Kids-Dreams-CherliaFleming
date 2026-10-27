@@ -13,3 +13,9 @@ export const Kids = () => {
     return html
 }
 
+addEventListener("click", (clickEvent) => {
+    const childId = parseInt(clickEvent.target.dataset.id)
+
+    if 
+    
+
