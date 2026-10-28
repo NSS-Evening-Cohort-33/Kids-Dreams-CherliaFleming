@@ -18,6 +18,16 @@ addEventListener("click", (clickEvent) => {
     const childId = parseInt(clickEvent.target.dataset.id)
 
     if (clickEvent.target.dataset.type === "child") {
-        alert(` ${childId} will be making memories with ${clickEvent.target.dataset.wish}`)
+        for (const child of children) {
+            if(childId === child.id){
+                window.alert(`
+                    ${child.name} wish is ${child.wish}
+                `)
+            }
+    }
+    
+}
+
+})
     
 
