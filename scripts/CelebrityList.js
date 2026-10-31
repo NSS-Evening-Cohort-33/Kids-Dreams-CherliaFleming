@@ -5,11 +5,11 @@ const celebrities = getCelebrities()
 export const Celebrities = () => {
     let html = "<ol>"
 
-    for (const star of celebrities) {
+    for (const celebrity of celebrities) {
         html += `<li 
                     data-id="${celebrity.id}" 
                     data-type="celebrity"
-                    data-sport="${celebrty.sport}"
+                    data-sport="${celebrity.sport}"
                     id="star--${celebrity.id}">
                     ${celebrity.name}
                 </li>`
@@ -22,11 +22,11 @@ export const Celebrities = () => {
 addEventListener("click", (clickEvent) => {
     const celebId = parseInt(clickEvent.target.dataset.id)
 
-    if (clickEvent.target.dataset.type === "child") {
+    if (clickEvent.target.dataset.type === "celebrity") {
         for (const celebrity of celebrities) {
             if(celebId === celebrity.id){
                 window.alert(`
-                    ${celebrity.name} is a ${celebrity.sport}
+                    ${celebrity.name} is a ${celebrity.sport} player.
                 `)
             }
     }

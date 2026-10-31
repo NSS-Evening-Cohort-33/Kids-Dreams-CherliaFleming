@@ -16,9 +16,11 @@ const applicationHTML = `
             ${Celebrities()}
         </section>
     </article>
-
-    <article class="assignments">
+    <article>
+    <section class="pairings">
         <h2>Pairings</h2>
+        ${Pairings()}
+        </section>
     </article>
 `
 

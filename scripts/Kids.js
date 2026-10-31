@@ -1,9 +1,8 @@
-import { getChildren, getCelebrities } from "./database.js"
+import { getChildren } from "./database.js"
 
 const children = getChildren()
-const celebrities = getCelebrities()
 
-export const Kids = (children) => {
+export const Kids = () => {
     let html = "<ol>"
 
     for (const child of children) {
